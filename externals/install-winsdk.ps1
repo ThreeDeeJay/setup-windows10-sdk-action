@@ -33,7 +33,7 @@ function Download-File {
 
     Write-Host -NoNewline "Downloading $downloadName..."
     if ($buildNumber -eq "15063") {
-        $downloadURL = "https://download.microsoft.com/download/E/1/B/E1B0E6C0-2FA2-4A1B-B322-714A5586BE63/windowssdk/winsdksetup.exe"
+        $downloadURL = "https://download.microsoft.com/download/0/1/1/01111605-8CDF-4A88-BB06-C20E97E8B3D5/iso_windowssdk/15063.468.170612-1856.rs2_release_svc_sec_WindowsSDK.iso"
     }
 
     if ($buildNumber -eq "16299") {
