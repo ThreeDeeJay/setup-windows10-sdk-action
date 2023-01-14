@@ -32,6 +32,10 @@ function Download-File {
     $downloadDestTemp = Join-Path $outDir "$downloadName.tmp"
 
     Write-Host -NoNewline "Downloading $downloadName..."
+    if ($buildNumber -eq "15063") {
+        $downloadURL = "https://download.microsoft.com/download/E/1/B/E1B0E6C0-2FA2-4A1B-B322-714A5586BE63/windowssdk/winsdksetup.exe"
+    }
+
     if ($buildNumber -eq "16299") {
         $downloadURL = "https://download.microsoft.com/download/F/8/E/F8EC2F14-375D-4C2E-9C2D-51CA8F7F590B/16299.15.170928-1534.rs3_release_WindowsSDK.iso"
     }
